@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
+
+import App from "./App.jsx";
+import { Gallery, Login, Register, Painting } from "./components";
+import "./index.css";
 
 const router = createBrowserRouter([
   {
@@ -12,6 +14,7 @@ const router = createBrowserRouter([
       { path: "", element: <Gallery /> },
       { path: "/login", element: <Login /> },
       { path: "/register", element: <Register /> },
+      { path: "/paintings/:paintingId", element: <Painting /> },
     ],
   },
 ]);
