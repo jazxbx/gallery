@@ -4,8 +4,8 @@ function Navbar() {
   return (
     <nav className="nav-wrapper">
       <Link to={"/"}>Home</Link>
-      <Link to={"/"}>Login</Link>
-      <Link to={"/"}>Register</Link>
+      <Link to={"/login"}>Login</Link>
+      <Link to={"/register"}>Register</Link>
     </nav>
   );
 }
