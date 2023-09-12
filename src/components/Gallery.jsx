@@ -15,12 +15,7 @@ function Gallery() {
         {paintingsWithImages.map((painting) => (
           <div className="painting-container" key={painting.id}>
             <Link to={`/painting/${painting.id}`}>
-              {painting.images.length > 0 && (
-                <img
-                  src={painting.images[0].baseimageurl}
-                  alt={painting.title}
-                />
-              )}
+              <img src={painting.images[0].baseimageurl} alt={painting.title} />
             </Link>
           </div>
         ))}
