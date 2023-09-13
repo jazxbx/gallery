@@ -5,6 +5,7 @@ import { API } from "./API";
 
 function App() {
   const [paintings, setPaintings] = useState([]);
+  const [user, setUser] = useState({ id: 1, username: "Jazz Bullecer" });
 
   async function fetchPaintings() {
     try {
@@ -22,8 +23,8 @@ function App() {
 
   return (
     <>
-      <Navbar />
-      <Outlet context={{ paintings }} />
+      <Navbar user={user} setUser={setUser} />
+      <Outlet context={{ paintings, user, setUser }} />
     </>
   );
 }
