@@ -5,7 +5,7 @@ import { API } from "./API";
 
 function App() {
   const [paintings, setPaintings] = useState([]);
-  const [user, setUser] = useState({ id: 1, username: "Jazz Bullecer" });
+  const [user, setUser] = useState({ id: 1, username: "Jazz" });
 
   async function fetchPaintings() {
     try {

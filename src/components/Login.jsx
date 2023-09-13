@@ -9,7 +9,7 @@ function Login() {
 
   function handleLogin(e) {
     e.preventDefault();
-    setUser({ id: 1, username: username ? username : "Jazz" });
+    setUser({ id: 1, username: username ? username : "Roronoa Zoro" });
     navigate("/");
   }
 
